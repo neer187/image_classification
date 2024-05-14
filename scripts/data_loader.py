@@ -33,9 +33,9 @@ def load_data(data_path, image_size, batch_size = 16):
     return train_loader, test_loader
 
 
-if __name__ == "__main__":
-    root_path = "../custom_data/data_set_1/smaller_dataset"
-    train_data, test_data = load_data(root_path, (224,224), 32)
-
-    for data in train_data:
-        images, labels = data
+# if __name__ == "__main__":
+#     root_path = "../custom_data/data_set_1/smaller_dataset"
+#     train_data, test_data = load_data(root_path, (224,224), 32)
+#
+#     for data in train_data:
+#         images, labels = data

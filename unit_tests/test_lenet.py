@@ -1,6 +1,22 @@
 import unittest
 import torch
 from models.lenet import LeNet
+from scripts.data_loader import load_data
+
+
+
+# if __name__ == "__main__":
+#     root_path = "data/smaller_dataset"
+#     train_data, test_data = load_data(root_path, (224,224), 32)
+#
+#     for data in train_data:
+#         images, labels = data
+
+class TestDataLoader(unittest.TestCase):
+    def test_data_loader(self):
+        root_path = "../custom_data/data_set_1/smaller_dataset"
+        train_data, test_data = load_data(root_path, (224, 224), 32)
+
 
 class TestLeNetModel(unittest.TestCase):
     def test_output_shape(self):

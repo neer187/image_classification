@@ -1,6 +1,6 @@
 import os
 import torch
-import torch.utils.data import Dataset
+from torch.utils.data import Dataset
 import cv2
 
 class CustomDataset(Dataset):
